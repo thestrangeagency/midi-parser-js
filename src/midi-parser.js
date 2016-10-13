@@ -54,7 +54,8 @@ OutputObject.track[2].event[12].data;
 
 
 // check browser compatibillity
-if (!window.File || !window.FileReader) console.warn('The File APIs are not fully supported in this browser. MIDIParser will not work properly');
+// or don't
+// if (!window.File || !window.FileReader) console.warn('The File APIs are not fully supported in this browser. MIDIParser will not work properly');
 
 var MIDIParser = {
 	// debug (bool), when enabled will log in console unimplemented events warnings and internal handled errors.
